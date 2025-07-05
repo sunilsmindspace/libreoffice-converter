@@ -1,0 +1,34 @@
+converter:
+  # Input file formats supported
+  input_formats:
+    - "docx"
+    - "doc"
+    - "odt"
+    - "rtf"
+    - "txt"
+    - "xlsx"
+    - "xls"
+    - "ods"
+    - "pptx"
+    - "ppt"
+    - "odp"
+  
+  # Output format for conversion
+  output_format: "pdf"
+  
+  # Number of parallel workers (reduced for testing)
+  workers: 2
+  
+  # Temporary directory for processing
+  temp_dir: "/tmp/converter_test"
+  
+  # Maximum file size in MB (reduced for testing)
+  max_file_size: 10
+  
+  # Timeout for conversion in seconds (reduced for testing)
+  conversion_timeout: 30
+
+server:
+  host: "127.0.0.1"
+  port: 8001
+  debug: true
